@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,  initial-scale=1">
+  <title>AHORCADO GAME</title>  
+  
+  <link rel='stylesheet' href='css/style.css'>
+</head>
+
+ <body>
+    <main class="main">
+
+        <img class="logo" src="img/logo.svg" >
+                   
+        
+        <textarea id="text_area" class="texto" name="text_area"  placeholder="Ingrese una palabra" required></textarea>
+
+        <div class = "info">
+            <img src= "img/Attention.svg" alt="attention sign">
+            <p id="info-word">Máximo de 8 letras</p>
+        </div>
+
+        <div class="buttons">                                                                  
+            <button id="btn-guardar" class="btn-guardar" type="submit" required> Guardar y empezar </button>
+            <button id="btn-cancelar" class="btn-cancelar" type="submit" required> Cancelar </button>              
+        </div>
+    <script src="js/agregar-palabra.js"></script>
+ </body>
+</html>

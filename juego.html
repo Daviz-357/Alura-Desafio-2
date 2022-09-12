@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AHORCADO GAME</title>        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <main class="main">
+            <img class="logo" src="img/logo.svg">
+        
+            <div class="horca"> </div>
+            <div class="tablero">
+                <canvas id="horca" height="800px" width="1200px"> </canvas>
+            </div>
+                    
+    
+            <div class="letras" ></div>           
+              
+            <div class="buttons">
+                <input class="btn-jugar" type="submit" value="Nuevo Juego" id="iniciar-juego">
+                <button id="btn-desistir" class="btn-desistir"> Desistir </button>
+            </div>
+        </main>                               
+
+    <script type="text/javascript" src="/js/juego.js"></script>
+    <script type="text/javascript" src="/js/canvas.js"></script>    
+
+    </body>
+</html>

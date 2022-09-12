@@ -1,0 +1,162 @@
+.logo{
+position: absolute;
+width: 31.09px;
+height: 48px;
+left: 84px;
+top: 40px;
+}
+
+.main{
+    height: 1440;
+    width: 1024;
+}
+
+.horca{
+    position: absolute;
+    text-align: center;
+    width: 294px;
+    height: 360px;
+    left: 573px;
+    background-color: burlywood;
+    top: 148px;
+}
+
+.canvas{
+    margin-left: 40px;
+    width: 1024px;
+    height:800px
+  }
+
+.sublinhado{
+    display:flex;
+  }
+
+.teclado{
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 464px;
+    height: 152px;
+    left: 488px;
+    top: 628px;
+}
+
+.letras{
+/* Word */
+width: 464px;
+height: 92px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.letra{
+position: absolute;
+width: 299px;
+height: 48px;
+left: 376px;
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+/* identical to box height, or 48px */
+
+
+}
+
+.otras-letras{
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 136px;
+height: 36px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+
+.buttons{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 688px;
+height: 67px;
+left: 376px;
+top: 886px;
+
+}
+
+.btn-jugar{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 332px;
+height: 67px;
+
+/* Dark blue/dark-blue-300 */
+color: #FFFFFF;
+background: #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+}
+
+.btn-desistir{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 332px;
+height: 67px;
+
+/* Dark blue/dark-blue-300 */
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 1;
+}
