@@ -6,28 +6,21 @@ left: 84px;
 top: 40px;
 }
 
-body{
+.main{
 position: relative;
 margin: 0 auto;
 width: 1440px;
 height: 1024px;
+
 /* Light blue/light-blue-100 */
 
 background: #F3F5FC;
 }
 
-.main{
-    align-items: flex-start;
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
 .tablero{   
     width: 1200px;
     height: 800px;
-    /* padding: 40px; */
-
+ flex:auto;
 }
 
 .horca{
@@ -106,39 +99,34 @@ border-radius: 24px;
 
 }
 
-.letras{
-/* Word */
-
-
-width: 464px;
-height: 92px;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-
 .letra{
-    position: absolute;
-width: 299px;
-height: 48px;
-left: 376px;
+/* Keyboard */
 
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 150%;
-/* identical to box height, or 48px */
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+position: absolute;
+width: 464px;
+height: 152px;
+left: 488px;
+top: 628px;
+
+
 
 
 }
 
 .otras-letras{
+
+/* Other letters */
+
+
 /* Auto layout */
 
 display: flex;
@@ -156,6 +144,10 @@ height: 36px;
 flex: none;
 order: 1;
 flex-grow: 0;
+
+
+
+
 }
 
 
@@ -248,7 +240,7 @@ top: 256px;
     
 }
 
-.info{
+.frame-1{
 /* Frame 1 */
 
 
@@ -261,32 +253,9 @@ padding: 0px;
 gap: 8px;
 
 position: absolute;
-width: 115px;
+width: 145px;
 height: 18px;
 left: 376px;
 top: 667px;
 
-}
-
-#info-word{
-    /* Máx. de 8 letras */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 150%;
-/* identical to box height, or 18px */
-
-
-/* Gray/gray-400 */
-
-color: #495057;
-
-opacity: 0.8;
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
 }
