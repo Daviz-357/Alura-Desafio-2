@@ -6,8 +6,8 @@ function base_horca() {
   pincel.strokeStyle = "#0A3871"
   pincel.fillRect(0,0,1200,800)
   pincel.beginPath();
-  pincel.moveTo(550,465)
-  pincel.lineTo(800,465)
+  pincel.moveTo(450,500)
+  pincel.lineTo(780,500)
   pincel.stroke()
   pincel.closePath()
   }
@@ -20,8 +20,8 @@ function dibujar_rayas(){
   pincel.beginPath()
   let ancho=600/palabra_secreta.length
   for (let i=0;i<palabra_secreta.length;i++){
-    pincel.moveTo(400+(ancho*i),640)
-    pincel.lineTo(450+(ancho*i),640)
+    pincel.moveTo(320+(ancho*i),640)
+    pincel.lineTo(360+(ancho*i),640)
   }
   pincel.stroke()
   pincel.closePath()
@@ -36,7 +36,7 @@ function dibujar_letra_correcta(index){
     pincel.fillStyle= "#0A3871"
   
   var largo = 600/palabra_secreta.length 
-  pincel.fillText(palabra_secreta[index],410+(largo*index),630);
+  pincel.fillText(palabra_secreta[index],320+(largo*index),635);
   pincel.stroke()
 }
 
@@ -46,7 +46,7 @@ function dibujar_letra_errada(letra, intentos) {
   pincel.lineCap="round"
   pincel.lineJoin="round"
   pincel.fillStyle="#0A3871"
-  pincel.fillText(letra,400+(40*(10-intentos)),700,40)
+  pincel.fillText(letra,380+(40*(10-intentos)),680,40)
 }
 
 
@@ -57,14 +57,14 @@ function dibujar_horca(intentos) {
     pincel.lineCap = "round"
     //poste  
   if (intentos === 8){
-    pincel.moveTo(600,460)
-    pincel.lineTo(600,148)
+    pincel.moveTo(550,500)
+    pincel.lineTo(550,148)
     pincel.stroke()
     pincel.closePath()
   }
     //techo
   if (intentos === 7){
-    pincel.moveTo(600,148)
+    pincel.moveTo(550,148)
     pincel.lineTo(770,148)
     pincel.stroke()
     pincel.closePath()
@@ -137,8 +137,7 @@ function dibujar_horca(intentos) {
     pincel.lineCap="round"
     pincel.lineJoin="round"
     pincel.fillStyle="red"
-    pincel.fillText("Fin del juego :(",930,320)
-    alert("La palabra correcta era: " + palabra_secreta)     
+    pincel.fillText("Fin del juego :(",930,320)        
     setTimeout( recarregar , 1000)
     
   } 
